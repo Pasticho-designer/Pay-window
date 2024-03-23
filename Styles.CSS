@@ -1,0 +1,117 @@
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: sans-serif;
+    width: 40px;
+  }
+.contenedor {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgb(29, 121, 197);
+}
+.sub-contenedor {
+    background-image: linear-gradient(rgb(41, 41, 4), rgb(59, 59, 59));
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    user-select: none;
+}
+.contenido img {
+    width: 45px;
+}
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+    gap: 20px;
+    margin-right: 60px;
+
+}
+.contenido .mensaje {
+    color:rgb(230, 230, 230);
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+
+}
+.mensaje h3 {
+    font-size: 22px;
+}
+.mensaje h5 {
+    font-size: 12px;
+}
+.botones {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    gap: 4px;
+}
+.botones button {
+    min-width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.botones button:nth-child(1) {
+    border: none;
+    background:forestgreen;
+    color: white;
+}
+.botones button:nth-child(2) {
+    border: solid 1px rgb(224, 224, 224);
+    background:rgb(233, 233, 233);
+}
+.botones button:nth-child(2):hover {
+    background:rgb(204, 204, 204);
+}
+.botones button:nth-child(1):hover {
+    background:rgb(25, 102, 25); 
+}
+@media (max-width:600px) {
+    .botones {
+        flex-direction: column;
+        margin: 8px;
+        gap: 6px;
+        margin-top: 0px;
+    }
+    .botones button {
+        width: 100%;
+    }
+    .contenido {
+        margin-bottom: 8px;
+    }
+}
